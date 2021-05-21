@@ -23,6 +23,12 @@ describe('Pizza App', () => {
             orderBtn().should('not.be.disabled')
         })
 
+        it('checks all the boxes', () => {
+            cy.get('[type="checkbox"]').check()
+        })
+
+
+
    
 
     // describe('Adding a new quote', () => {

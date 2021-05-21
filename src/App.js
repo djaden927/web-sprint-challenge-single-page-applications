@@ -47,7 +47,7 @@ const App = () => {
   }
 
   const postNewOrder = newOrder => {
-    axios.post('https://reqres.in/api/users', newOrder)
+    axios.post('https://reqres.in/api/orders', newOrder)
       .then(res => {
         setOrder(res.data)
       })
@@ -90,7 +90,7 @@ const App = () => {
       <div className='nav-links'>
         {/* 👉 STEP 3 - Make Links to navigate us Home (`/`) and Shop (`/items-list`) */}
         <Link to='/'>Home</Link>
-        <Link to='/pizza'>order</Link>
+        <Link to='/pizza' id="order-pizza" >order</Link>
       </div>
 
       <Switch>
