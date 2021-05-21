@@ -1,0 +1,4 @@
+"testFiles": [
+    "../src/_tests_quotes.spec.js",
+    "../src/_tests_mvp.test.js"
+]
